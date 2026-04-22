@@ -9,8 +9,8 @@
 
   FlowersBouquet* Grower::prepareOrder(std::vector<std::string> flowers){
     std::cout << "Grower " << this->getName() << " forwards the request to Gardener "<< gardener_->getName() << "." << std::endl;
-
+    FlowersBouquet* bouq =  gardener_->prepareBouquet(flowers);
     std::cout << "Gardener " << gardener_->getName() << " returns flowers to Grower "<< this->getName() << "." << std::endl;
-    return  gardener_->prepareBouquet(flowers);
+    return bouq;
   };
 

@@ -10,5 +10,5 @@ class FlowersBouquet;
 class Gardener: public Person {
 public:
   Gardener(const std::string name);
-  FlowersBouquet* prepareBouquet(const std::vector<std::string> &flowers);
+  FlowersBouquet* prepareBouquet( std::vector<std::string> flowers);
 };

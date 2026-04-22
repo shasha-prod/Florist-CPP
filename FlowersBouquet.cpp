@@ -7,13 +7,13 @@ FlowersBouquet::FlowersBouquet( const std::vector<std::string> bouquet, bool is_
 void FlowersBouquet::arrange() {
     is_arranged_=true;
 }
-std::string FlowersBouquet::getFlowerString() const{
+std::string FlowersBouquet::getBouquetString() const{
     std::string list_of_flowers;
     for (const std::string& flower : bouquet_) {
-        list_of_flowers = flower +", " + list_of_flowers;
+        list_of_flowers =  list_of_flowers +", " + flower;
     }
-    return list_of_flowers;
+    return list_of_flowers.substr(2);
 }
 bool FlowersBouquet::isReady() const{
-    return is_arranged_==true;
+    return is_arranged_;
 }

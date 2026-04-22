@@ -9,7 +9,7 @@ class FlowersBouquet;
 
 class Wholesaler : public Person{
 public:
-  Wholesaler(const std::string& name, Grower*& grower);
+  Wholesaler(const std::string& name, Grower* grower);
   FlowersBouquet* acceptOrder(std::vector<std::string> flowers);
 private:
   Grower* grower_;

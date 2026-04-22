@@ -7,7 +7,7 @@ class FlowersBouquet{
     public:
         FlowersBouquet( const std::vector<std::string> bouquet , bool is_arranged);
         void arrange();
-        std::string getFlowerString() const;
+        std::string getBouquetString() const;
         bool isReady() const;
 
     private:
