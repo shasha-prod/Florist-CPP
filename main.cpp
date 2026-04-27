@@ -23,6 +23,15 @@ std::vector<std::string> flowers = {
 "Roses", "Violets", "Gladiolus"
 };
 chris->orderFlowers(florist, robin, flowers);
-// cleanup omitted for brevity
+
+delete chris;
+delete robin;
+delete gardener;
+delete grower;
+delete wholesaler;
+delete arranger;
+delete delivery;
+delete florist;
+
 return 0;
 }
